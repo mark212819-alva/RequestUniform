@@ -1,0 +1,10 @@
+import { createApp } from 'vue';
+import { IonicVue } from '@ionic/vue';
+import App from './App.vue';
+import router from './router';
+import './styles.scss';
+import './school-pickup.scss';
+import './invitations.scss';
+import './app/login.page.scss';
+import './app/portal.page.scss';
+const app=createApp(App).use(IonicVue).use(router);router.isReady().then(()=>app.mount('#app'));

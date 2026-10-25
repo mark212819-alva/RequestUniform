@@ -1,0 +1,23 @@
+@import '@ionic/core/css/core.css';
+@import '@ionic/core/css/normalize.css';
+@import '@ionic/core/css/structure.css';
+@import '@ionic/core/css/typography.css';
+@import '@ionic/core/css/display.css';
+:root {
+  --ion-color-primary: #087a46;
+  --ion-color-primary-rgb: 8, 122, 70;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #076b3e;
+  --ion-color-primary-tint: #218754;
+  --ion-color-secondary: #126044;
+  --ion-color-secondary-rgb: 18, 96, 68;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #10543c;
+  --ion-color-secondary-tint: #2a7057;
+}
+*{box-sizing:border-box}html,body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;color:#1b2a22;background:#f4f7f5}button,input{font:inherit}
+.profile-single select{width:100%;min-height:44px;border:1px solid #d9e3dd;border-radius:9px;padding:0 12px;background:#fff;color:#24372d;font:inherit;outline:none}.profile-single select:focus{border-color:#087a46;box-shadow:0 0 0 3px #087a4615}
+.settings-page{max-width:none!important}.settings-page .form-card{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px}.settings-page .form-title,.settings-page .current-password,.settings-page .security-note,.settings-page .form-actions{grid-column:1/-1}@media(max-width:800px){.settings-page .form-card{grid-template-columns:1fr}.settings-page .form-title,.settings-page .current-password,.settings-page .security-note,.settings-page .form-actions{grid-column:auto}}
+.staff-layout{display:grid;grid-template-columns:minmax(320px,430px) minmax(0,1fr);gap:18px;align-items:start}.invite-form{display:grid;gap:15px}.invite-form label{display:grid;gap:6px;font-size:12px;font-weight:750;color:#35483e}.invite-form input,.invite-form select{height:44px;border:1px solid #d9e3dd;border-radius:9px;padding:0 11px;background:#fff;font:inherit}.generated-link{background:#eaf7f0;border:1px solid #bde2cd;border-radius:11px;padding:13px;color:#165f3d}.generated-link>div{display:flex;margin:8px 0}.generated-link input{min-width:0;flex:1;border-radius:8px 0 0 8px}.generated-link button{border:0;background:#087a46;color:#fff;padding:0 14px;border-radius:0 8px 8px 0;font-weight:800}.generated-link small{font-size:10px}.invitations-list{padding:0!important;overflow:hidden}.invite-empty{padding:45px;text-align:center;color:#819087}.invite-row{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:15px;padding:16px 20px;border-bottom:1px solid #e9eeeb}.invite-row>div:first-child{display:flex;flex-direction:column;min-width:0}.invite-row span,.invite-row small{color:#77867e;font-size:11px;margin-top:3px}.invite-status{padding:6px 9px;border-radius:99px;background:#eef2f0;font-weight:800}.invite-status.active{background:#e7f6ed;color:#087346}.invite-status.revoked,.invite-status.expired{background:#fff0f0;color:#a33a3a}.invite-status.accepted{background:#e9f1fb;color:#28699e}.invite-actions{display:flex;gap:6px}.invite-actions button{border:1px solid #ccdcd3;background:#fff;color:#426052;border-radius:7px;padding:7px 9px;font-size:10px;font-weight:800}.invite-actions .danger-button{color:#a43b3b;border-color:#eccaca}@media(max-width:950px){.staff-layout{grid-template-columns:1fr}.invite-row{grid-template-columns:1fr auto}.invite-actions{grid-column:1/-1}}

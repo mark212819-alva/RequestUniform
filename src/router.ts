@@ -1,0 +1,11 @@
+import { createRouter,createWebHistory } from '@ionic/vue-router';
+import type { RouteLocationNormalized } from 'vue-router';
+import LoginView from './views/LoginView.vue';
+import InviteRegisterView from './views/InviteRegisterView.vue';
+import PortalView from './views/PortalView.vue';
+import { portal } from './stores/portal';
+import type { Role } from './app/models';
+const routes=[{path:'/',redirect:'/student/login'},{path:'/register/:role(student|marketing)/:token',component:InviteRegisterView,meta:{guest:true}},{path:'/:role(student|marketing)/login',component:LoginView,meta:{guest:true}},{path:'/:role(student|marketing)/:section',component:PortalView,meta:{auth:true}},{path:'/:pathMatch(.*)*',redirect:'/student/login'}];
+const router=createRouter({history:createWebHistory(),routes});
+router.beforeEach(async (to:RouteLocationNormalized)=>{const role=to.params.role as Role|undefined;if(to.meta.auth&&role){const valid=await portal.validateSession(role);if(!valid)return `/${role}/login`}if(to.meta.guest&&role&&portal.user.value?.role===role)return `/${role}/dashboard`;return true});
+export default router;
