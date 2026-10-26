@@ -1,0 +1,6 @@
+project_id = "ggzwmlfynkugathxouxm"
+
+# Registration happens before a user has a Supabase session. Security is
+# enforced inside the function using the hashed, expiring invitation token.
+[functions.invite-register]
+verify_jwt = false
